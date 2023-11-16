@@ -546,3 +546,180 @@ footer {
 #register .btn:hover {
   color: rgb(25, 59, 26);
 }
+
+/* Additional Styles */
+body {
+  background-color: #f5f9f0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Styling for the Header Section */
+#telemedicine-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styling for the Hero Section */
+#hero {
+  background-image: url('images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-left h1 {
+  font-size: 36px;
+}
+
+.hero-left p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-left .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #28a745;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Styling for Feature Cards */
+.feature-card {
+  display: inline-block;
+  width: 33.33%;
+  padding: 30px;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Styling for Service Cards */
+.service-card {
+  display: inline-block;
+  width: 33.33%;
+  padding: 30px;
+  text-align: center;
+}
+
+.service-card img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+/* Styling for the Contact Section */
+#contact {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styling for the Footer Section */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.scroll-to-top {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Animation on Hover */
+/* Apply hover effect to Features link */
+.nav-links li:nth-child(1) a:hover {
+  color: #00b209;
+}
+
+/* Apply hover effect to Services link */
+.nav-links li:nth-child(2) a:hover {
+  color: #00b209;
+}
+
+/* Apply hover effect to Register link */
+.nav-links li:nth-child(3) a:hover {
+  color: #00b209;
+}
+
+/* Apply hover effect to buttons */
+.hero-left .btn:hover,
+#register .btn:hover {
+  color: #1b3b1a;
+}

@@ -218,8 +218,7 @@ nav .nav-links li a {
   text-decoration: none;
 }
 
-
-#telemedicine-header{
+#telemedicine-header {
   background-color: #e7fee7;
   color: black;
 }
@@ -311,56 +310,6 @@ nav .nav-links li a {
   margin-bottom: 10px;
 }
 
-/* Additional styles or overrides can be added as needed */
-/* How It Works Section */
-#how-it-works {
-  padding: 80px 0;
-  background-color: #f8f9fa;
-}
-
-#how-it-works .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.step {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 40px;
-}
-
-.step img {
-  flex: 0 0 50%;
-  max-width: 100%;
-}
-
-.step-text {
-  flex: 0 0 50%;
-  padding: 0 40px;
-}
-
-.step-text h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.step-text p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.step-text ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.step-text ul li {
-  margin-bottom: 10px;
-}
-
 .step-text.step-1 {
   order: 2;
 }
@@ -371,33 +320,6 @@ nav .nav-links li a {
 
 .step.step-1 img {
   order: 1;
-}
-
-/* Additional styles or overrides can be added as needed */
-#hero .hero-left h2 {
-  font-size: 36px;
-}
-
-#hero .hero-left h1 {
-  font-size: 48px;
-}
-
-#hero .hero-left p {
-  font-size: 20px;
-}
-
-#hero .hero-right img {
-  border-radius: 50%;
-  border: 2px solid #fff;
-  outline: 2px solid #bef6cb;
-}
-
-#how-it-works .step img {
-  width: 70%; /* Adjust the width as desired */
-  height: auto; /* Maintain the aspect ratio */
-  object-fit: cover;  
-  width: 100px;
-  margin-bottom: 20px;
 }
 
 /* Contact Section */
@@ -425,13 +347,6 @@ nav .nav-links li a {
 
 .contact-details p {
   margin-bottom: 10px;
-}
-
-
-
-#contact {
-  padding: 80px 0;
-  text-align: center;
 }
 
 .contact-info {
@@ -520,7 +435,6 @@ footer {
   margin-right: 0.5em; /* Add spacing between the logo and text */
 }
 
-
 /* Apply hover effect to Features link */
 .nav-links li:nth-child(1) a:hover {
   color: #00b209; /* Change the text color on hover */
@@ -545,4 +459,69 @@ footer {
 /* Apply hover effect to Register button */
 #register .btn:hover {
   color: rgb(25, 59, 26);
+}
+
+/* ANIMATION */
+/* Add animation to the header */
+#telemedicine-header {
+  background-color: #2e86de;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  animation: slideDown 1s ease;
+}
+
+/* Animate the hero section */
+#hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  animation: fadeIn 2s ease;
+}
+
+/* Animate the feature cards */
+.feature-card {
+  margin: 20px;
+  animation: zoomIn 1s ease;
+}
+
+/* Animate the service cards */
+.service-card {
+  margin: 20px;
+  animation: zoomIn 1s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
